@@ -8,7 +8,7 @@ loc = '北京'
 
 def getjson(url, loc, ak, page_num = 0):
     pa = {
-        'query'     : '水岸桃源露营基地',
+        'query'     : '陶然亭公园',
         'region'    : loc,
         'output'    : 'json',
         'scope'     : '2',

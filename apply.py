@@ -1,6 +1,7 @@
 import requests
 import json
 import pandas as pd
+import multifile_test
 
 ak  = 'LAInFGSPGUSqRkOGENsDVclsc6a2eWq5'
 place_url = 'https://api.map.baidu.com/place/v2/search'
@@ -37,6 +38,7 @@ def route_search(url, ak, origin, destination):
 
 if __name__ == "__main__":
     print('progtam start...')
+    multifile_test.hello_world
     df = pd.read_excel(r'北京营地汇总.xlsx', header=None)
     origin_coord = place_search(place_url, ak, loc, origin)
     print('origin: ',origin, origin_coord)
